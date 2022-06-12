@@ -17,7 +17,7 @@
             <form id="parts-form">
                 <div class="form-group">
                     <label for="title">Nombre de la coleccion</label>
-                    <input
+                   idcollecton: <input
                             type="text"
                             name="title"
                             id="title"
@@ -27,35 +27,19 @@
 
                 <div class="form-group">
                     <label for="description">Nombre del Item</label>
-                    <input
-                            name="name"
-                            id="name"
-                            name="name"
-                    ></input>
-                </div>
+                    nameart: <input name="name" id="name" name="name" />
 
-                <div class="form-group">
                     <label for="description">Descripcion</label>
-                    <input
-                            name="description"
-                            id="description"
-                            name="description"
-                    ></input>
+                    <input name="description" id="description" >
                 </div>
 
-                <div class="form-group">
-                    <label for="description">Precio</label>
-                    <input
-                            name="pric"
-                            id="pric"
-                            name="pric"
-                    ></input>
-                </div>
+                price:  <label for="description">Precio</label>
+                <input id="pric" name="pric" required >
 
                 <div class="form-file">
                     <div class="form-file__action">
                         <label for="image" class="title">Foto de publicación</label>
-                        <input type="file" name="image" id="image" />
+                        <input type="file" name="image" id="image" required/>
                     </div>
                     <div class="form-file__result" id="result-image">
                         <img id="img-result" alt="" />
@@ -73,9 +57,9 @@
     let partsForm = document.getElementById("part");
     partsForm.onsubmit = async  (e) => {
         e.preventDefault();
-        let response = await fetch("./api/users/{username}/avatars", {
+        let response = await fetch("./api/users/"+localStorage.getItem("username")+"/imagen", {
             method: "POST",
-            body: new FormData(partsForm);
+            body: new FormData(partsForm),
         });
         let message = await response.text();
         alert(message);

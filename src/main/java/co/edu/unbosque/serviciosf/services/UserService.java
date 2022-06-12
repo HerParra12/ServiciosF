@@ -1,8 +1,8 @@
 package co.edu.unbosque.serviciosf.services;
 import co.edu.unbosque.serviciosf.model.UserApp;
-
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class UserService {
@@ -20,8 +20,11 @@ public class UserService {
             Class.forName(JDBC_DRIVER);
             System.out.println("name = " + name + ", email = " + email + ", password = " + password + ", role = " + role);
             String query = "INSERT INTO userApp(name, email, password, role) VALUES ('" + name +"', '" + email +"', '" + password +"', '" + role +"')";
-           String type="created";
-            String query2 = "INSERT INTO Art(userapp, type, fcoin, reguisterdat) VALUES ('" + email +"', '" + type +"', '" + 0 +"', '" + null+"')";
+            String type="created";
+            Date date = new Date();
+            long mili = date.getTime();
+            Timestamp time = new Timestamp(mili);
+            String query2 = "INSERT INTO walletHistory(userapp, type, fcoins, registeredat) VALUES ('" + email +"', '" + type +"', '" + 0 +"', '" + time + "')";
             statement.execute(query);
             statement.executeQuery(query2);
         } catch(SQLException sqlException) {
@@ -42,10 +45,9 @@ public class UserService {
             ResultSet result = statement.executeQuery(query);
             while(result.next()) {
                 list.add(new UserApp(result.getString("name"),
-                        result.getString("email"),
-                        result.getString("password"),
-                        result.getString("role"),
-                        result.getFloat("focins")));
+                                     result.getString("email"),
+                                     result.getString("password"),
+                                     result.getString("role")));
             }
             return list.stream()
                        .peek(x -> System.out.println(x))
@@ -71,8 +73,7 @@ public class UserService {
                 list.add(new UserApp(result.getString("name"),
                        result.getString("email"),
                         result.getString("password"),
-                        result.getString("role"),
-                        result.getFloat("focins")));
+                        result.getString("role")));
             }
             } catch (SQLException ex) {
             ex.printStackTrace();
@@ -81,4 +82,6 @@ public class UserService {
         }
         return list;
     }
+
+
 }

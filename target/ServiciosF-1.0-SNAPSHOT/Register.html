@@ -40,7 +40,7 @@
     form.addEventListener("submit", function(e){
         e.preventDefault();
         let json = {
-            "username": document.getElementById("username").value,
+            "name": document.getElementById("username").value,
             "email": document.getElementById("email").value,
             "password": document.getElementById("key").value,
             "role": document.getElementById("role").value,
@@ -55,7 +55,7 @@
         }).then(response =>
             response.json())
           .then(person => {
-                localStorage.setItem("username",person["username"]);
+                localStorage.setItem("name",person["name"]);
                 localStorage.setItem("email", person["email"]);
                 localStorage.setItem("role", person["role"]);
                 localStorage.setItem("fcoins", person["fcoins"]);

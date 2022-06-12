@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ServiciosF:war exploded" />
+      <artifact name="ServiciosF:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -11,6 +11,21 @@
   <component name="ChangeListManager">
     <list default="true" id="4b07daf2-04cc-44a2-b94e-6a21730b9dbb" name="Changes" comment="Enciso art,login acutalizado y wallet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model/UserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model/UserApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/Create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/WEB-INF/classes/co/edu/unbosque/serviciosf/model/UserApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/WEB-INF/classes/co/edu/unbosque/serviciosf/model/UserApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/WEB-INF/classes/co/edu/unbosque/serviciosf/services/ArtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/WEB-INF/classes/co/edu/unbosque/serviciosf/services/ArtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/WEB-INF/classes/co/edu/unbosque/serviciosf/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ServiciosF-1.0-SNAPSHOT/WEB-INF/classes/co/edu/unbosque/serviciosf/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/serviciosf/model/UserApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/serviciosf/model/UserApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/serviciosf/services/ArtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/serviciosf/services/ArtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/serviciosf/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/serviciosf/services/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +82,10 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Create.html">
-    <configuration name="JBoss/WildFly 26.1.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="JBoss/WildFly 25.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 25.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ServiciosF:war exploded">
+        <artifact name="ServiciosF:war">
           <settings />
         </artifact>
       </deployment>
@@ -84,7 +99,7 @@
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61343" />
+        <option name="DEBUG_PORT" value="57766" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -134,28 +149,20 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ServiciosF:war exploded" />
+          <artifact name="ServiciosF:war" />
         </option>
       </method>
     </configuration>
-    <configuration name="Create.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ServiciosF/src/main/webapp/Create.html" useBuiltInWebServerPort="true">
+    <configuration name="Create.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ServiciosF-1.0-SNAPSHOT/Create.html">
       <method v="2" />
     </configuration>
-    <configuration name="Myaccount.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ServiciosF/src/main/webapp/Myaccount.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ServiciosF/src/main/webapp/index3.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ServiciosF/src/main/webapp/result.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 25.0.1.Final" />
+      <item itemvalue="JavaScript Debug.Create.html" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.Create.html" />
-        <item itemvalue="JavaScript Debug.index3.html" />
-        <item itemvalue="JavaScript Debug.result.html" />
-        <item itemvalue="JavaScript Debug.Myaccount.html" />
       </list>
     </recent_temporary>
   </component>
