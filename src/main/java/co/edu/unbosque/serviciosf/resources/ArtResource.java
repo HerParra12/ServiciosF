@@ -1,13 +1,8 @@
 package co.edu.unbosque.serviciosf.resources;
 
-package co.edu.unbosque.taller4.resource;
+import co.edu.unbosque.serviciosf.model.Art;
+import co.edu.unbosque.serviciosf.services.ArtService;
 
-
-import co.edu.unbosque.taller4.Dto.Obra;
-
-import javax.ws.rs.core.MultivaluedMap;
-
-import co.edu.unbosque.taller4.service.obraService;
 import org.jboss.resteasy.plugins.providers.multipart.*;
 
 import javax.servlet.ServletContext;
@@ -30,8 +25,8 @@ public class ArtResource {
     ServletContext context;
 
     static final String USER = "postgres";
-    static final String PASS = "jota73456";
-    static final String DB_URL = "jdbc:postgresql://localhost/Arte";
+    static final String PASS = "admin";
+    static final String DB_URL = "jdbc:postgresql://localhost/laschiquistriquis";
     Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
     private final String UPLOAD_DIRECTORY = "/imagen/";
 
@@ -50,7 +45,7 @@ public class ArtResource {
         Integer precio2=0;
         Integer pieceid=0;
         String alfanumerico="";
-        Obra obra_n=new Obra();
+        Art obra_n=new Art();
         System.out.println("este es el username "+nombre);
         try {
             // Getting the file from form input
@@ -69,7 +64,7 @@ public class ArtResource {
             if(formParts.get("precio") != null){
                 precio2=Integer.parseInt(formParts.get("precio").get(0).getBodyAsString());
             }
-            obraService obras=new obraService(conn);
+            ArtService obras=new ArtService(conn);
             pieceid=obras.listaobra().size();
             System.out.println("este es nombre "+filename2);
 
@@ -90,7 +85,7 @@ public class ArtResource {
                 // If file name is not specified as input, use default file name
                 if (fileName.equals("") || fileName == null) {
                     // Retrieving headers and reading the Content-Disposition header to file name
-                    MultivaluedMap<String, String> headers = inputPart.getHeaders();
+                    jakarta.ws.rs.core.MultivaluedMap<String, String> headers = inputPart.getHeaders();
                     fileName = parseFileName(headers);
                 }
 
@@ -101,11 +96,11 @@ public class ArtResource {
                 saveFile(istream,   alfanumerico, context);
             }
             obra_n.setOwner(username);
-            obra_n.setPieceid(pieceid);
-            obra_n.setTitulo(filename2);
-            obra_n.setPrecio(precio2);
-            obra_n.setImagen(alfanumerico);
-            obra_n.setColecction(colectioni);
+            obra_n.setId(pieceid);
+            obra_n.setTitle(filename2);
+            obra_n.setPrice(precio2.toString());
+            obra_n.setImg(alfanumerico);
+            obra_n.setCollection(colectioni);
 
             obras.insertobra(obra_n);
 
@@ -119,7 +114,7 @@ public class ArtResource {
     }
 
     // Parse Content-Disposition header to get the file name
-    private String parseFileName(MultivaluedMap<String, String> headers) {
+    private String parseFileName(jakarta.ws.rs.core.MultivaluedMap<String, String> headers) {
         String[] contentDispositionHeader = headers.getFirst("Content-Disposition").split(";");
 
         for (String name : contentDispositionHeader) {

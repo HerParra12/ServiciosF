@@ -1,6 +1,7 @@
 package co.edu.unbosque.serviciosf.services;
 
 import co.edu.unbosque.serviciosf.model.Art;
+import co.edu.unbosque.serviciosf.model.Collection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class ArtService {
         return DriverManager.getConnection(url, user, password);
     }
 
-    public long insertobra(Art user){
+    public long insertobra(Art user ){
         System.out.print("se esta pasando por la funcion de insertuser");
         String SQL= "INSERT INTO Art (id, name, price, imagepath,forsale,collection)"+"VALUES(?,?,?,?,?,?)";
         long id=0;
@@ -33,7 +34,7 @@ public class ArtService {
             pstmt.setDouble(3, Double.parseDouble(user.getPrice()));
             pstmt.setString(2,user.getTitle());
             pstmt.setString(4,user.getImg());
-            pstmt.setBoolean(6,user.getForsale());
+            pstmt.setBoolean(5,user.getForsale());
             int affectedRows = pstmt.executeUpdate();
             // check the affected rows
             if (affectedRows > 0) {
