@@ -1,8 +1,12 @@
 package co.edu.unbosque.serviciosf.resources;
 
 import co.edu.unbosque.serviciosf.model.Art;
+import co.edu.unbosque.serviciosf.model.Collection;
+import co.edu.unbosque.serviciosf.model.UserApp;
 import co.edu.unbosque.serviciosf.services.ArtService;
 
+import co.edu.unbosque.serviciosf.services.CollectionService;
+import co.edu.unbosque.serviciosf.services.UserService;
 import org.jboss.resteasy.plugins.providers.multipart.*;
 
 import javax.servlet.ServletContext;
@@ -104,6 +108,16 @@ public class ArtResource {
 
             obras.insertobra(obra_n);
 
+            Collection colectionw = new Collection();
+            colectionw.setColecctionid(colectioni);
+            colectionw.setTitulo(colecctionid);
+            colectionw.setDescription(null);
+            UserApp userApp=new UserApp();
+            List<UserApp> service=new UserService().getUsers();
+            userApp=service.stream().filter(user -> username.equals(user.getName())).findFirst().orElse(null);
+            colectionw.setEmail(userApp.getEmail());
+            CollectionService collectionService= new CollectionService(conn);
+            collectionService.crearcoleccion(colectionw);
             return Response.status(201)
                     .entity("Avatar successfully uploaded for " + username)
                     .build();

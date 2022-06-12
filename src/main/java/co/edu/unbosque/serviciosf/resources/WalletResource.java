@@ -1,6 +1,9 @@
 package co.edu.unbosque.serviciosf.resources;
 
+import co.edu.unbosque.serviciosf.model.UserApp;
 import co.edu.unbosque.serviciosf.model.Wallet;
+import co.edu.unbosque.serviciosf.services.UserService;
+import co.edu.unbosque.serviciosf.services.WalletService;
 
 import javax.servlet.ServletContext;
 import javax.ws.rs.*;
@@ -9,7 +12,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.List;
 
 
 @Path("/wallet")
@@ -19,7 +24,7 @@ public class WalletResource {
 
 
     static final String JDBC_DRIVER = "org.postgresql.Driver";
-    static final String DB_URL = "jdbc:postgresql://localhost:5432/postgres";
+    static final String DB_URL = "jdbc:postgresql://localhost:5432/laschiquistriquis";
 
     // Database credentials
     static final String USER = "postgres";
@@ -34,14 +39,14 @@ public class WalletResource {
                            @FormParam("name_art") String name_art) {
 
         //cambiar metodo
-        boolean buy = new Wallet().buy(userBuyer, price, name_art).get();
+        boolean buy = new WalletService().sell(userBuyer, price, name_art).get();
 
         Connection conn = null;
 
         if (buy) {
-            new Wallet().sale(userSeller, price);
+            new WalletService().sold(userSeller, price);
 
-            List<Usuario> users = null;
+            List<UserApp> users = null;
             try {
                 Class.forName(JDBC_DRIVER);
 
@@ -49,9 +54,7 @@ public class WalletResource {
                 System.out.println("Connecting to database...");
                 conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
-                users = new AgregarUsuario().getUsers();
-            } catch (IOException e) {
-                e.printStackTrace();
+                users = new UserService().getUsers();
             } catch (SQLException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
@@ -65,7 +68,7 @@ public class WalletResource {
                 }
             }
 
-            Usuario userfound = users.stream().filter(user -> userBuyer.equals(user.getUsername())).findFirst().orElse(null);
+            UserApp userfound = users.stream().filter(user -> userBuyer.equals(user.getName())).findFirst().orElse(null);
             if (userfound != null) {
                 return Response.ok().entity(userfound).build();
             }

@@ -64,6 +64,7 @@ public class CollectionService {
             pstmt.setString(4,null);
             pstmt.setString(5,null);
             int affectedRows = pstmt.executeUpdate();
+
             // check the affected rows
             if (affectedRows > 0) {
                 // get the ID back
