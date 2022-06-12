@@ -28,7 +28,7 @@ public class WalletResource {
 
     // Database credentials
     static final String USER = "postgres";
-    static final String PASS = "20031812";
+    static final String PASS = "admin";
     @PUT
     @Path("/buy")
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
