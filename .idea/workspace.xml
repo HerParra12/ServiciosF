@@ -10,9 +10,108 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b07daf2-04cc-44a2-b94e-6a21730b9dbb" name="Changes" comment="Enciso art,login acutalizado y wallet">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ServiciosF_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ServiciosF_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_core_6_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_core_spi_6_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxb_provider_6_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_multipart_provider_6_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_servlet_initializer_6_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_3_0_spec_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiciosF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ServiciosF.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/HelloResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model/Art.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model/Collection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model/UserApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model/Wallet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/resources/ArtResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/resources/UserResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/resources/WalletResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/ArtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/CollectionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/services/WalletService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Cantidad.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Collect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Explora.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Fcoins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Likes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Myaccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/On-Off.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Res.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/ingres.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/wallet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/1.1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/1click.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/1ex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/1i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/2.2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/2click.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/2ex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/2i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/3.3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/3ex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/3i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/4.4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/4click.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/5.5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/6.6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/CollecFont.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Fondscre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Fonregis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Imac.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Nft1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Nft2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Nft3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Nft4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/Topscolec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/computadoraMac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/fondoind2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/fonexp.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/index3img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/leftarrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/paint.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/perfilimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/portada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/rightarrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/shapes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/questions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/wallet.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +148,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/co/edu/unbosque/serviciosf/model" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -60,6 +159,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\herna\Documents\ServiciosF\src\main\java\co\edu\unbosque\serviciosf\model" />
       <recent name="C:\Users\USER\Documents\tercer semestre\programación2\ServiciosF\src\main" />
       <recent name="C:\Users\USER\Documents\tercer semestre\programación2\ServiciosF\src\main\java\co\edu\unbosque\serviciosf" />
     </key>
@@ -68,8 +168,8 @@
       <recent name="C:\Users\USER\Documents\tercer semestre\programación2\ServiciosF\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Create.html">
-    <configuration name="JBoss/WildFly 26.1.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 26.1.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 26.1.1.Fina">
+    <configuration name="JBoss/WildFly 26.1.1.Fina" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 25.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ServiciosF:war exploded">
@@ -80,7 +180,7 @@
         <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="SERVER_GROUP" />
         <option name="USERNAME" value="" />
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
@@ -140,6 +240,9 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Create.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ServiciosF-1.0-SNAPSHOT/Create.html">
+      <method v="2" />
+    </configuration>
     <configuration name="Create.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ServiciosF/src/main/webapp/Create.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -152,8 +255,17 @@
     <configuration name="result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ServiciosF/src/main/webapp/result.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Create.html" />
+      <item itemvalue="JavaScript Debug.Myaccount.html" />
+      <item itemvalue="JavaScript Debug.index3.html" />
+      <item itemvalue="JavaScript Debug.result.html" />
+      <item itemvalue="JavaScript Debug.Create.html (1)" />
+      <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 26.1.1.Fina" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Create.html (1)" />
         <item itemvalue="JavaScript Debug.Create.html" />
         <item itemvalue="JavaScript Debug.index3.html" />
         <item itemvalue="JavaScript Debug.result.html" />
@@ -172,6 +284,7 @@
       <workItem from="1655015394410" duration="1084000" />
       <workItem from="1655016503279" duration="2584000" />
       <workItem from="1655036542217" duration="11345000" />
+      <workItem from="1655092396931" duration="11943000" />
     </task>
     <task id="LOCAL-00001" summary="Enciso art,login acutalizado y wallet">
       <created>1655019044626</created>
@@ -201,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655051136403</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Enciso art y colecciones totalmente fucionales">
+      <created>1655104412610</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655104412610</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +340,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Enciso art,login acutalizado y wallet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enciso art,login acutalizado y wallet" />
+    <MESSAGE value="Enciso art y colecciones totalmente fucionales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enciso art y colecciones totalmente fucionales" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
