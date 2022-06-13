@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>habilitar y deshabilitar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body  >
+
+<style type="text/css">
+    .form{
+
+        font-size: 15px;
+        text-align: center;
+        width: 400px;
+        border: 2px solid #E1E1E1;
+        border-radius: 4px;
+        padding: 15px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1{
+
+
+        text-align: center;
+        font-size: 23px;
+    }
+
+
+</style>
+<div class="form">
+
+        <input  class="btn btn-secundary  btn-block"  type="image" placeholder="Ingrese Nombre" id="nombre">
+
+    <br>
+    <button class="btn btn-primary  btn-block" type="image" id="btndesabilitar">HABILITAR</button>
+    <button  class="btn btn-primary  btn-block" type="image" id="btnhabilitar">DESHABILITAR</button></div>
+
+<script>
+    $(document).ready(function(){
+
+        $("#btndesabilitar").click(function(){
+            $("#nombre").prop("disabled",false);
+        });
+
+        $("#btnhabilitar").click(function(){
+            $("#nombre").prop("disabled",true);
+        });
+    });
+
+</script>
+</body>
+</html>

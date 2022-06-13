@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoTrabajo || byRedHunter</title>
+    <link rel="shortcut icon" href="../Noa-eu/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<main class="publicar--empleo">
+    <form id ="part">
+        <section class="main__form">
+            <h2 class="main__form--title">Crea un nuevo item</h2>
+                <div class="form-group">
+                    colectionid: <input type="number" name="colectionid" id="colectionid" required/>
+                </div>
+                <div class="form-group">
+                    nombre: <input name="nombre" id="nombre"/>
+                    descripcion: <input name="descripcion" id="descripcion" required>
+                </div>
+                  precio: <input id="precio" name="precio" required>
+                <div class="form-file">
+                    <div class="form-file__action">
+                        <label for="imagen" class="title">Foto de publicación
+                     Imagen: <input type="file" name="imagen" id="imagen" required/>
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" value="Publicar">
+        </section>
+    </form>
+    <script>
+    const form = document.querySelector("form")
+
+    form.onsubmit = async (e)=> {
+    e.preventDefault()
+
+    let email = localStorage.getItem('email')
+    console.log(email)
+    const formData =new FormData(form);
+
+    try {
+    let response = await fetch(`./api/users/arts/${email}`, {
+    method: 'POST',
+    headers: {
+
+    },
+
+    body: formData,
+
+
+    });
+    let result = await response.json();
+    console.log(result);
+    console.log(result.file);
+    if(result.file != ""){
+    window.location.href = "http://localhost:8080/ServiciosF-1.0-SNAPSHOT/index.html"
+    }
+
+    }
+    catch (r) {
+    console.log(r + "!error.!")
+    }
+    }</script>
+
+</body>
+</html>
